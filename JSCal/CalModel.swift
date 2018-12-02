@@ -10,7 +10,7 @@ import Foundation
 
 
 
-class RxCalModel {
+class CalModel {
     
     enum OperatorList: String {
         case add = "+"
@@ -35,14 +35,14 @@ class RxCalModel {
     
     
     
-    var nowNumber: Float = 0
-    var dotCount: Float = 0
-    var numberLog: [Float] = []
+    var nowNumber: Double = 0
+    var dotCount: Double = 0
+    var numberLog: [Double] = []
     
     
     // 숫자 입력
-    func inputNumber(num:Float) {
-        
+    func inputNumber(_ num:Double) -> String {
+        print("input Number: \(num)")
         switch dotCount == 0 {
         case true:
             // 소수점 x
@@ -50,14 +50,30 @@ class RxCalModel {
             break
         case false:
             // 소수점 o
-            nowNumber = nowNumber + (num / (powf(10, dotCount)))
+            nowNumber = nowNumber + (num / (pow(10, dotCount)))
             break
         }
         
-        print(nowNumber)
+        if dotCount != 0 {
+            dotCount += 1
+        }
+        
+        return nowNumber.description
     }
     // 사칙 연산 입력
-    func inputOperator(){
+    func inputOperator(_ type: String){
+        print("input type: \(type)")
+        
+        let convertedType = OperatorList.init(rawValue: type)!
+        
+        switch convertedType {
+        case .dot:
+            guard dotCount == 0 else { return }
+            dotCount = 1
+            break
+        default:
+            break
+        }
         
     }
     // 특수 기능 입력
