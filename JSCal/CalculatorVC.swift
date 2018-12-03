@@ -48,42 +48,43 @@ class CalculatorVC: UIViewController {
         super.viewDidLoad()
         
         calModel = CalModel()
+        calModel.delegate = self
+        calModel.clearAll()
+        
 
         // Do any additional setup after loading the view.
     }
     
-
-
-    
     @IBAction func inputNum(_ sender: UIButton) {
         let converted = Double(sender.currentTitle!)!
-        let str = calModel.inputNumber(converted)
-        self.lbInput.text = str
+        calModel.inputNumber(converted)
     }
     
     @IBAction func inputOperator(_ sender: UIButton) {
         let str = sender.currentTitle!
         calModel.inputOperator(str)
+        inputOperator(result: str)
         
     }
     
     @IBAction func inputFunction(_ sender: UIButton) {
-        
+        let str = sender.currentTitle!
+        calModel.inputSpecial(str)
     }
 }
 
 
 extension CalculatorVC: CalculatorDelegate {
-    func inputNumber(num: Float) {
-        
+    func showLogString(logStr: String) {
+        self.lbLog.text = logStr
     }
     
-    func inputOperator() {
-        
+    func endOperator(result: String) {
+        self.lbResult.text = result
     }
     
-    func inputSpecial() {
-        calModel.inputSpecial()
+    func inputOperator(result: String) {
+        self.lbInput.text = result
     }
     
     

@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol CalculatorDelegate {
-    func inputNumber(num: Float)
-    func inputOperator()
-    func inputSpecial()
+    func inputOperator(result: String)
+    func endOperator(result: String)
+    func showLogString(logStr: String)
 }
