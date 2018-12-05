@@ -197,15 +197,15 @@ class CalModel {
         let isShowOpenArrow = numberLog.contains("x") || numberLog.contains("/")
         
         for (c, row) in numberLog.enumerated() {
-            if c == 0 && isShowOpenArrow  {
-                for _ in 0...self.divAndMulCount  {
+            if c == 0 && isShowOpenArrow && self.divAndMulCount != 0  {
+                for _ in 0...self.divAndMulCount - 1  {
                     text += "("
                 }
                 
                 text += " "
             }
             
-            if row == "x" || row == "/" && isFinal == false{
+            if row == "x" || row == "/" && isFinal == false {
                 text += ") "
             }
             

@@ -30,7 +30,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CT-eE-R22">
                                         <rect key="frame" x="20" y="8" width="311" height="111"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKv-AM-Waq">
@@ -64,7 +64,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.28235294119999998" green="0.61960784310000006" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="bKv-AM-Waq" secondAttribute="bottom" constant="8" id="3BC-GI-TaE"/>
                                     <constraint firstItem="hOY-vP-yoA" firstAttribute="top" secondItem="7CT-eE-R22" secondAttribute="bottom" constant="30" id="8Lq-cx-SRo"/>
@@ -100,7 +100,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2W-vM-GYm">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.64628758220000004" blue="0.11893389980000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="AC"/>
                                                 <connections>
                                                     <action selector="inputFunction:" destination="kpK-BO-6oK" eventType="touchUpInside" id="a3Y-PF-d4H"/>
@@ -108,7 +107,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULb-WM-bhk">
                                                 <rect key="frame" x="88" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.64628758220000004" blue="0.11893389980000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="CE"/>
                                                 <connections>
                                                     <action selector="inputFunction:" destination="kpK-BO-6oK" eventType="touchUpInside" id="0W0-dQ-BBl"/>
@@ -116,12 +114,10 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY6-L4-TqT">
                                                 <rect key="frame" x="176" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.64628758220000004" blue="0.11893389980000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Save"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-ye-8SD">
                                                 <rect key="frame" x="264" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="/"/>
                                                 <connections>
                                                     <action selector="inputOperator:" destination="kpK-BO-6oK" eventType="touchUpInside" id="5ks-VB-t5W"/>
@@ -134,7 +130,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TR-7S-z3i">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="124-3V-8co"/>
@@ -142,7 +137,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tft-TB-JEy">
                                                 <rect key="frame" x="88" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="RuN-fY-asx"/>
@@ -150,7 +144,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aS-qs-0IY">
                                                 <rect key="frame" x="176" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="9"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="Ddc-iq-hTI"/>
@@ -158,7 +151,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khk-g7-AXm">
                                                 <rect key="frame" x="264" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="x"/>
                                                 <connections>
                                                     <action selector="inputOperator:" destination="kpK-BO-6oK" eventType="touchUpInside" id="myT-SN-Ytg"/>
@@ -171,7 +163,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-1S-1CU">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="81"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="4"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="xyW-LR-4nd"/>
@@ -179,7 +170,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvA-Vy-nJu">
                                                 <rect key="frame" x="88" y="0.0" width="87" height="81"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="rJR-Ms-67l"/>
@@ -187,7 +177,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkk-Q5-xWd">
                                                 <rect key="frame" x="176" y="0.0" width="87" height="81"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="XaJ-m0-cYE"/>
@@ -195,7 +184,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgC-jd-gwk">
                                                 <rect key="frame" x="264" y="0.0" width="87" height="81"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
                                                     <action selector="inputOperator:" destination="kpK-BO-6oK" eventType="touchUpInside" id="OYw-vM-3XO"/>
@@ -208,7 +196,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-1t-u8W">
                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="1"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="J9C-0k-7nu"/>
@@ -216,7 +203,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKv-LU-1on">
                                                 <rect key="frame" x="88" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="2"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="9rO-cq-jva"/>
@@ -224,7 +210,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykF-9z-PPJ">
                                                 <rect key="frame" x="176" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="3"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="JUX-s7-yNt"/>
@@ -232,7 +217,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFF-1F-fNq">
                                                 <rect key="frame" x="264" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
                                                     <action selector="inputOperator:" destination="kpK-BO-6oK" eventType="touchUpInside" id="tcB-jM-FX9"/>
@@ -245,7 +229,6 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODE-7m-842">
                                                 <rect key="frame" x="0.0" y="0.0" width="131" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="0"/>
                                                 <connections>
                                                     <action selector="inputNum:" destination="kpK-BO-6oK" eventType="touchUpInside" id="XTe-Sb-cjx"/>
@@ -253,7 +236,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-Nh-Hxs">
                                                 <rect key="frame" x="132" y="0.0" width="131" height="81.5"/>
-                                                <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="."/>
                                                 <connections>
                                                     <action selector="inputFunction:" destination="kpK-BO-6oK" eventType="touchUpInside" id="Zwk-KY-T3b"/>
@@ -262,7 +244,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-J1-lM8">
                                                 <rect key="frame" x="264" y="0.0" width="87" height="81.5"/>
-                                                <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="="/>
                                                 <connections>
                                                     <action selector="inputFunction:" destination="kpK-BO-6oK" eventType="touchUpInside" id="xns-Ht-XbR"/>
